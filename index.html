@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Algorithm Visualizer</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container my-5">
+        <h1 class="text-center">Sorting Algorithm Visualizer</h1>
+        <div class="controls my-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="algorithm" class="form-label">Select Algorithm:</label>
+                    <select id="algorithm" class="form-select">
+                        <option value="bubbleSort">Bubble Sort</option>
+                        <option value="selectionSort">Selection Sort</option>
+                        <option value="insertionSort">Insertion Sort</option>
+                        <option value="mergeSort">Merge Sort</option>
+                        <option value="quickSort">Quick Sort</option>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <label for="speed" class="form-label">Sorting Speed:</label>
+                    <input type="range" id="speed" class="form-range" min="1" max="100" value="50">
+                </div>
+            </div>
+            <div class="text-center my-3">
+                <button id="generateArray" class="btn btn-primary">Generate New Array</button>
+                <button id="startSort" class="btn btn-success">Start Sorting</button>
+                <button id="stopSort" class="btn btn-warning">Stop</button>
+            </div>
+        </div>
+        <div class="d-flex">
+            <div id="arrayContainer" class="d-flex justify-content-center align-items-end"></div>
+            <div id="algorithmDetails">
+                <h4>Algorithm Details</h4>
+                <p><strong>Name:</strong> <span id="algoName">Select an algorithm</span></p>
+                <p><strong>Time Complexity:</strong> <span id="timeComplexity">N/A</span></p>
+                <p><strong>Space Complexity:</strong> <span id="spaceComplexity">N/A</span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

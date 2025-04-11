@@ -1,0 +1,101 @@
+body {
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+}
+
+#arrayContainer {
+    width: 50%;
+    height: 80%;
+    display: flex;
+    align-items: flex-end;
+    gap: 5px;
+    border: 1px solid #ccc;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    margin: 20px;
+    position: relative;
+}
+
+#algorithmDetails {
+    width: 40%;
+    height: 80%;
+    background: rgba(255, 255, 255, 0.9);
+    color: #000000;
+    border-radius: 8px;
+    margin: 20px;
+    padding: 20px;
+    font-size: 1rem;
+    overflow-y: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.array-bar {
+    background-color: #007bff;
+    transition: height 0.2s ease, background-color 0.2s ease;
+}
+
+.array-bar.active {
+    background-color: #28a745;
+}
+
+.array-bar.compare {
+    background-color: #dc3545;
+}
+
+.array-bar.sorted {
+    background-color: #28a745;
+}
+
+h1 {
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+label {
+    color:#ff9800;/* Change this to the desired color, e.g., orange */
+    font-weight: bold;
+}
+
+
+button {
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #007bff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.controls {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.array-bar.sorted {
+    background-color: #28a745; /* Green */
+}
